@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&display=swap');
+
+:root{
+    /* Primary */
+    --Light-red-: hwb(0 34% 0%);
+    --Orangey-yellow-: hsl(39, 100%, 56%);
+    --Green-teal-: hsl(166, 100%, 37%);
+    --Cobalt-blue-: hsl(234, 85%, 45%);
+
+
+    /* Gradients */
+    --Light-slate-blue- :  hsl(252, 100%, 67%);
+    --Light-royal-blue-: hsl(241, 81%, 54%);
+    --Violet-blue-: hsla(256, 72%, 46%, 1);
+    --Persian-blue-: hsla(241, 72%, 46%, 0);
+
+    /* Netural */
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue-: hsl(221, 100%, 96%);
+    --Light-lavender-: hsl(241, 100%, 89%);
+    --Dark-gray-blue-: hsl(224, 30%, 27%);   
+    
+    --alpha : 0.8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--Pale-blue-);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container .card{
+    width: 55%;
+    height: 80%;
+    background-color: var(--White);
+    display: flex;
+    border-radius: 30px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    box-shadow: 12px 31px 62px -30px rgba(0,0,0,0.64);
+-webkit-box-shadow: 12px 31px 62px -30px rgba(0,0,0,0.64);
+-moz-box-shadow: 12px 31px 62px -30px rgba(0,0,0,0.64);
+   
+}
+
+.main-container .card .right-side{
+   
+    color: var(--Light-lavender-);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    border-radius: 30px;
+    background : linear-gradient(180deg,var(--Light-slate-blue-), #4635f3, var(--Light-royal-blue-)) ;
+    
+}
+.main-container .card .right-side h3{
+    font-size: 20px;
+    
+}
+.main-container .card .right-side .score-info h2{
+    color: var(--White);
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.main-container .card .right-side .score-info p{
+   font-size: 18px;
+   margin-bottom: 10px;
+   line-height: 22px;
+}
+.main-container .card .right-side .circle{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background : linear-gradient(to bottom,var(--Violet-blue-), #4633ed) ;
+    
+}
+.main-container .card .right-side .circle h1{
+    color: var(--Light-lavender-);
+    font-size: 18px;
+    
+}
+.main-container .card .right-side .circle h1 span{
+   color: var(--White);
+   font-size: 70px;
+}
+
+.main-container .card .left-side{
+    width: 50%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: var(--White);
+    padding: 0 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.main-container .card .left-side h3{
+    font-size: 20px;
+}
+.main-container .card .left-side button{
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    color: var(--White); 
+    padding: 15px;
+    background-color: var(--Dark-gray-blue-);
+}
+.main-container .card .left-side .result-score{
+    display: flex;
+    flex-direction: column;
+    
+}  
+.main-container .card .left-side .result-score .results{
+    width: 100%;
+    height: 55px;
+    margin-block: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 10px;
+    
+} 
+.main-container .card .left-side .result-score .results .numbers{
+    color: #9e9faf;
+    font-weight: bold;
+       
+}
+.main-container .card .left-side .result-score .results .numbers span{
+ color: var(--Dark-gray-blue-);
+ font-weight: bold;
+    
+} 
+
+.main-container .card .left-side .result-score .reaction{
+    color: var(--Light-red-);
+    background-color: hwb(0 34% 0% / 0.116);
+} 
+.main-container .card .left-side .result-score .memory{
+    color: var(--Orangey-yellow-);
+    background-color: hsla(39, 100%, 56%, 0.116);
+}
+.main-container .card .left-side .result-score .verbal{
+    color: var(--Green-teal-);
+    background-color: hsla(166, 100%, 37%, 0.112);
+}
+.main-container .card .left-side .result-score .visual{
+    color: var(--Cobalt-blue-);
+    background-color: hsla(234, 85%, 45%, 0.112); 
+}
+.main-container .card .left-side .result-score .results .icon-content{
+   display: flex;
+}
+.main-container .card .left-side .result-score .results .icon-content {
+    display: flex;
+ }   
+.main-container .card .left-side .result-score .results .icon-content p{
+margin-left: 10px; 
+font-size: 16px;
+font-weight: bold;  
+}
+
+@media (max-width: 1440px){
+    .main-container{
+        width: 100%;
+        height: 100%;
+       
+    }
+    .main-container .card{
+        width: 55%;
+        height: 80%;
+      
+    }
+}
+
+@media (max-width: 375px){
+    .main-container{
+        width: 100%;
+        height: 130%;
+       
+    }
+    .main-container .card{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+      
+    }
+    .main-container .card .right-side{
+        width: 100%;
+        height: 85%;
+        border-radius:0 0 25px 25px;
+        
+    }
+
+    .main-container .card .right-side .circle{
+        width: 120px;
+        height: 120px;
+        border-radius: 100px;
+        
+    }
+    .main-container .card .right-side .circle h1{
+      font-size: 15px;
+        
+    }
+    .main-container .card .right-side .circle h1 span{
+        font-size: 45px;
+          
+      }
+    .main-container .card .right-side h3{  
+        font-size: 16px;
+    }
+    .main-container .card .right-side .score-info h2{  
+        font-size: 25px;
+    }
+    .main-container .card .right-side .score-info p{  
+        font-size: 15px;
+    }
+    .main-container .card .left-side{
+     width: 100% ;
+     padding-block: 15px;
+    }
+    .main-container .card .left-side .result-score .results{
+       height: 50px;
+           
+    }
+
+}
+
+   
+
+
